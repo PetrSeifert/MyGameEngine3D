@@ -1,4 +1,4 @@
-#include <first_app.hpp>
+#include <snake_ai/app.hpp>
 
 
 
@@ -41,7 +41,7 @@ MyModel::Builder foodSprite = {{
     {{0}, {2}, {3}, {0}, {1}, {2}}
 };
 
-FirstApp::FirstApp(){
+App::App(){
     globalPool = MyDescriptorPool::Builder(myDevice)
         .setMaxSets(MySwapChain::MAX_FRAMES_IN_FLIGHT)
         .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, MySwapChain::MAX_FRAMES_IN_FLIGHT)
@@ -50,9 +50,9 @@ FirstApp::FirstApp(){
     setup();
 }
 
-FirstApp::~FirstApp(){}
+App::~App(){}
 
-void FirstApp::setup(){ 
+void App::setup(){ 
     uboBuffers = std::vector<std::unique_ptr<MyBuffer>>(MySwapChain::MAX_FRAMES_IN_FLIGHT);
     for (int i = 0; i < uboBuffers.size(); i++){
         uboBuffers[i] = std::make_unique<MyBuffer>(
@@ -79,7 +79,7 @@ void FirstApp::setup(){
     agent.model.load();
 }
 
-void FirstApp::run() {
+void App::run() {
     while (!myWindow.shouldClose()){
         glfwPollEvents();
         cycles++;
@@ -174,7 +174,7 @@ void FirstApp::run() {
     vkDeviceWaitIdle(myDevice.device());
 }
 
-void FirstApp::restart(){
+void App::restart(){
     while(snakeBlocks.size() > game.snake_size){
         gameObjects.erase(snakeBlocks[snakeBlocks.size()-1]);
         snakeBlocks.pop_back();
@@ -185,7 +185,7 @@ void FirstApp::restart(){
     gameObjects.at(foodId).transform.translation = {game.food_x - cameraSize + 0.5f, game.food_y - cameraSize + 0.5f, .1f};
 }
 
-void FirstApp::move(){
+void App::move(){
     if (moveDir != glm::vec3(0, 0, 0))
     {
         MyGameObject& currHead = gameObjects.at(snakeBlocks[0]);
@@ -195,7 +195,7 @@ void FirstApp::move(){
     }
 }
 
-bool FirstApp::isDead(glm::vec3 headPos){
+bool App::isDead(glm::vec3 headPos){
     if (headPos.x >= cameraSize || 
         headPos.y >= cameraSize ||
         headPos.x <= -cameraSize || 
@@ -211,7 +211,7 @@ bool FirstApp::isDead(glm::vec3 headPos){
     return false;
 }
 
-bool FirstApp::canEat(){
+bool App::canEat(){
     MyGameObject *head = &gameObjects.at(snakeBlocks[0]);
     MyGameObject *food = &gameObjects.at(foodId);
 
@@ -222,7 +222,7 @@ bool FirstApp::canEat(){
     return false;
 }
 
-void FirstApp::eat(){
+void App::eat(){
     gameObjects.at(foodId).transform.translation = getRandomPosition();
     std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, snakeSprite);
     auto gameObj = MyGameObject::createGameObject();
@@ -232,7 +232,7 @@ void FirstApp::eat(){
     snakeBlocks.insert(snakeBlocks.end(), gameObj.getId());
 }
 
-glm::vec3 FirstApp::getRandomPosition(){
+glm::vec3 App::getRandomPosition(){
     static std::random_device rd;  
     static std::mt19937 gen(rd()); 
     std::uniform_int_distribution<> distrib(-cameraSize, cameraSize - 1);
@@ -240,7 +240,7 @@ glm::vec3 FirstApp::getRandomPosition(){
     return glm::vec3(distrib(gen) + 0.5f, distrib(gen) + 0.5f, .1f);
 }
 
-void FirstApp::loadGameObjects(){
+void App::loadGameObjects(){
     std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, snakeSprite);
     for (int i = 0; i < snakeLength; i++)
     {
@@ -271,7 +271,7 @@ void FirstApp::loadGameObjects(){
     gameObjects.emplace(gameObj.getId(), std::move(gameObj));
 }
 
-void FirstApp::train() {
+void App::train() {
     // get old state
     std::vector<float> state_old = agent.get_state(game);
 
@@ -312,19 +312,19 @@ void FirstApp::train() {
         plot_mean_scores.push_back(mean_score);
         if (showPlot)
         {
-            plt::clf();
+            /* plt::clf();
             plt::title("Training...");
             plt::xlabel("Number of Games");
             plt::ylabel("Score");
             plt::plot(plot_scores);
             plt::plot(plot_mean_scores);
-            plt::show(true);
+            plt::show(true); */
             showPlot = false;
         }
     }
 }
 
-void FirstApp::test() {
+void App::test() {
     // get old state
     std::vector<float> state_old = agent.get_state(game);
     // get move
@@ -351,13 +351,13 @@ void FirstApp::test() {
         plot_mean_scores.push_back(mean_score);
         if (showPlot)
         {
-            plt::clf();
+            /* plt::clf();
             plt::title("Testing...");
             plt::xlabel("Number of Games");
             plt::ylabel("Score");
             plt::plot(plot_scores);
             plt::plot(plot_mean_scores);
-            plt::show(true);
+            plt::show(true); */
             showPlot = false;
         }
     }

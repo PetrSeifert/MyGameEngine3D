@@ -1,13 +1,11 @@
-#include <agent.hpp>
-
 //std
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
-#include <first_app.hpp>
+#include <snake_ai/app.hpp>
 
 int main(){
-    FirstApp app{};
+    App app{};
 
     try{
         app.run();

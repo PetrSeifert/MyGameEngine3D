@@ -1,4 +1,4 @@
-#include <try.hpp>
+#include <snake_ai/try.hpp>
 
 void SnakeGameAI::reset() {
     score = 0;
@@ -117,17 +117,17 @@ void Linear_QNetImpl::reset() {
 }
 
 void Linear_QNetImpl::save() {
-    torch::save(fc1, "fc1.pt");
-    torch::save(fc2, "fc2.pt");
-    torch::save(fc3, "fc3.pt");
-    torch::save(fc4, "fc4.pt");
+    torch::save(fc1, "model/fc1.pt");
+    torch::save(fc2, "model/fc2.pt");
+    torch::save(fc3, "model/fc3.pt");
+    torch::save(fc4, "model/fc4.pt");
 }
 
 void Linear_QNetImpl::load(){
-    torch::load(fc1, "fc1.pt");
-    torch::load(fc2, "fc2.pt");
-    torch::load(fc3, "fc3.pt");
-    torch::load(fc4, "fc4.pt");
+    torch::load(fc1, "model/fc1.pt");
+    torch::load(fc2, "model/fc2.pt");
+    torch::load(fc3, "model/fc3.pt");
+    torch::load(fc4, "model/fc4.pt");
     fc1->eval();
     fc2->eval();
     fc3->eval();

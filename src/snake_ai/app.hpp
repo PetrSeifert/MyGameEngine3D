@@ -13,7 +13,7 @@
 #include <chrono>
 #include <systems/simple_renderer_system.hpp>
 #include <systems/point_light_system.hpp>
-#include <matplotlib/matplotlibcpp.h>
+// #include <matplotlib/matplotlibcpp.h>
 
 //std
 #include <memory>
@@ -21,20 +21,21 @@
 #include <array>
 #include <iostream>
 #include <algorithm>
-#include <try.hpp>
 
-namespace plt = matplotlibcpp;
+#include <snake_ai/try.hpp>
 
-class FirstApp{
+// namespace plt = matplotlibcpp;
+
+class App{
     public:
         static constexpr int WIDTH = 1280;
         static constexpr int HEIGHT = 720;
 
-        FirstApp();
-        ~FirstApp();
+        App();
+        ~App();
 
-        //FirstApp(const FirstApp &) = delete;
-        //FirstApp& operator=(const FirstApp &) = delete;
+        //App(const App &) = delete;
+        //App& operator=(const App &) = delete;
 
         void setup();
         void run();
