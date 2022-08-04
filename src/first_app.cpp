@@ -312,13 +312,13 @@ void FirstApp::train() {
         plot_mean_scores.push_back(mean_score);
         if (showPlot)
         {
-            // plt::clf();
-            // plt::title("Training...");
-            // plt::xlabel("Number of Games");
-            // plt::ylabel("Score");
-            // plt::plot(plot_scores);
-            // plt::plot(plot_mean_scores);
-            // plt::show(true);
+            plt::clf();
+            plt::title("Training...");
+            plt::xlabel("Number of Games");
+            plt::ylabel("Score");
+            plt::plot(plot_scores);
+            plt::plot(plot_mean_scores);
+            plt::show(true);
             showPlot = false;
         }
     }
@@ -351,13 +351,13 @@ void FirstApp::test() {
         plot_mean_scores.push_back(mean_score);
         if (showPlot)
         {
-            // plt::clf();
-            // plt::title("Testing...");
-            // plt::xlabel("Number of Games");
-            // plt::ylabel("Score");
-            // plt::plot(plot_scores);
-            // plt::plot(plot_mean_scores);
-            // plt::show(true);
+            plt::clf();
+            plt::title("Testing...");
+            plt::xlabel("Number of Games");
+            plt::ylabel("Score");
+            plt::plot(plot_scores);
+            plt::plot(plot_mean_scores);
+            plt::show(true);
             showPlot = false;
         }
     }

@@ -13,7 +13,7 @@
 #include <chrono>
 #include <systems/simple_renderer_system.hpp>
 #include <systems/point_light_system.hpp>
-// #include <matplotlib/matplotlibcpp.h>
+#include <matplotlib/matplotlibcpp.h>
 
 //std
 #include <memory>
@@ -23,7 +23,7 @@
 #include <algorithm>
 #include <try.hpp>
 
-// namespace plt = matplotlibcpp;
+namespace plt = matplotlibcpp;
 
 class FirstApp{
     public:
