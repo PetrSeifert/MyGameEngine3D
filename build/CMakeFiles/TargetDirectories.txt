@@ -1,4 +1,0 @@
-D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/MyGameEngine.dir
-D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/Shaders.dir
-D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/ALL_BUILD.dir
-D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/ZERO_CHECK.dir
