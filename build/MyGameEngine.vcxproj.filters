@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\agent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\first_app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\keyboard_movement_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_descriptors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_pipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_swap_chain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\systems\directional_light_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\systems\point_light_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\systems\simple_renderer_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\try.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Programing\VSCode\C++\MyGameEngine3D\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4996FC44-0B3A-3AFC-8B78-C884D4D93CB3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

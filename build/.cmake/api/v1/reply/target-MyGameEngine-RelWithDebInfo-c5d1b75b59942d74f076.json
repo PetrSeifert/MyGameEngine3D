@@ -1,0 +1,457 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/MyGameEngine.exe"
+		},
+		{
+			"path" : "RelWithDebInfo/MyGameEngine.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_directories",
+			"target_link_libraries",
+			"include_directories",
+			"target_include_directories",
+			"set_property"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 94,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 84,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc  /Zi /O2 /Ob1 /DNDEBUG -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/Z7"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/DNOMINMAX"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4267"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4522"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4838"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4305"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4244"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4190"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4101"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4996"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4275"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/bigobj"
+				},
+				{
+					"fragment" : "-std:c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "USE_C10D_GLOO"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_DISTRIBUTED"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "D:/Programing/VSCode/C++/MyGameEngine3D/external"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Programing/VSCode/C++/MyGameEngine3D/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/VulkanSDK/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Programing/VSCode/C++/MyGameEngine3D/external/tinyobjloader"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Programing/VSCode/C++/MyGameEngine3D/external/glm"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/petrs/AppData/Local/Programs/Python/Python310/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/include/torch/csrc/api/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					7
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "MyGameEngine::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc  /Zi /O2 /Ob1 /DNDEBUG -MD",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:D:\\VulkanSDK\\Lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:C:\\Users\\petrs\\AppData\\Local\\Programs\\Python\\Python310\\libs",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:D:\\Programing\\VSCode\\C++\\MyGameEngine3D\\external\\GLFW\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LIBPATH:C:\\Users\\petrs\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\numpy\\core\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "..\\external\\libtorch\\lib\\c10.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "..\\external\\libtorch\\lib\\kineto.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "glfw3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "vulkan-1.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "..\\external\\libtorch\\lib\\torch.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\external\\libtorch\\lib\\torch_cpu.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "..\\external\\libtorch\\lib\\c10.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "MyGameEngine",
+	"nameOnDisk" : "MyGameEngine.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/agent.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/first_app.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/keyboard_movement_controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/model.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_buffer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_camera.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_descriptors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_device.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_model.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_pipeline.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_renderer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_swap_chain.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/my_window.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/systems/directional_light_system.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/systems/point_light_system.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/systems/simple_renderer_system.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/try.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

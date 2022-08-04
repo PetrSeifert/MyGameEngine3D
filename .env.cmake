@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bfd279a37cd59df0c13c2b34872a758d46c41b8026a6a71a09ebbb785850ef13
-size 525
+set(GLFW_PATH D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW)
+set(GLM_PATH D:/Programing/VSCode/C++/MyGameEngine3D/external/glm)
+set(Torch_DIR D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Torch)
+set(VULKAN_SDK_PATH  D:/VulkanSDK)
+
+# Set MINGW_PATH if using mingwBuild.bat and not VisualStudio20XX
+
+# Optional set TINYOBJ_PATH to target specific version, otherwise defaults to external/tinyobjloader
+# set(TINYOBJ_PATH X:/dev/Libraries/tinyobjloader)

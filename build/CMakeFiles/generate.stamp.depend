@@ -1,0 +1,41 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeCInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeCXXInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeGenericSystem.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeRCInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/CheckLibraryExists.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/FindPackageMessage.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/FindThreads.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Platform/Windows.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/.env.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/CMakeLists.txt
+D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/3.21.21080301-MSVC_2/CMakeCCompiler.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/3.21.21080301-MSVC_2/CMakeCXXCompiler.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/3.21.21080301-MSVC_2/CMakeRCCompiler.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/3.21.21080301-MSVC_2/CMakeSystem.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/Caffe2Config.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/Caffe2Targets-debug.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/public/mkl.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/public/mkldnn.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/public/threads.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Caffe2/public/utils.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Torch/TorchConfig.cmake
+D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/share/cmake/Torch/TorchConfigVersion.cmake

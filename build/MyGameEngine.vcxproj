@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5EDB3678-C7BD-3E16-A545-8EA59574DCA1}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>MyGameEngine</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Programing/VSCode/C++/MyGameEngine3D/build</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyGameEngine.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyGameEngine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Programing/VSCode/C++/MyGameEngine3D/build</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyGameEngine.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyGameEngine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Programing/VSCode/C++/MyGameEngine3D/build</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyGameEngine.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyGameEngine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Programing/VSCode/C++/MyGameEngine3D/build</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyGameEngine.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyGameEngine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4522;4838;4305;4244;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/asmjit.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/c10.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/fbgemm.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiomp5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiompstubs5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_cpu.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_global_deps.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/uv.dll D:/Programing/VSCode/C++/MyGameEngine3D/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\external\libtorch\lib\c10.lib;..\external\libtorch\lib\kineto.lib;glfw3.lib;vulkan-1.lib;..\external\libtorch\lib\torch.lib;..\external\libtorch\lib\torch_cpu.lib;..\external\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VulkanSDK/Lib;D:/VulkanSDK/Lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs;C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs/$(Configuration);D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib;D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib;C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programing/VSCode/C++/MyGameEngine3D/build/Debug/MyGameEngine.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programing/VSCode/C++/MyGameEngine3D/build/Debug/MyGameEngine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4267;4251;4522;4838;4305;4244;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/asmjit.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/c10.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/fbgemm.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiomp5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiompstubs5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_cpu.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_global_deps.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/uv.dll D:/Programing/VSCode/C++/MyGameEngine3D/build/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\external\libtorch\lib\c10.lib;..\external\libtorch\lib\kineto.lib;glfw3.lib;vulkan-1.lib;..\external\libtorch\lib\torch.lib;..\external\libtorch\lib\torch_cpu.lib;..\external\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VulkanSDK/Lib;D:/VulkanSDK/Lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs;C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs/$(Configuration);D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib;D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib;C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programing/VSCode/C++/MyGameEngine3D/build/Release/MyGameEngine.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programing/VSCode/C++/MyGameEngine3D/build/Release/MyGameEngine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4267;4251;4522;4838;4305;4244;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/asmjit.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/c10.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/fbgemm.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiomp5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiompstubs5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_cpu.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_global_deps.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/uv.dll D:/Programing/VSCode/C++/MyGameEngine3D/build/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\external\libtorch\lib\c10.lib;..\external\libtorch\lib\kineto.lib;glfw3.lib;vulkan-1.lib;..\external\libtorch\lib\torch.lib;..\external\libtorch\lib\torch_cpu.lib;..\external\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VulkanSDK/Lib;D:/VulkanSDK/Lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs;C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs/$(Configuration);D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib;D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib;C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programing/VSCode/C++/MyGameEngine3D/build/MinSizeRel/MyGameEngine.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programing/VSCode/C++/MyGameEngine3D/build/MinSizeRel/MyGameEngine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4522;4838;4305;4244;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Programing\VSCode\C++\MyGameEngine3D\external;D:\Programing\VSCode\C++\MyGameEngine3D\src;D:\VulkanSDK\Include;D:\Programing\VSCode\C++\MyGameEngine3D\external\tinyobjloader;D:\Programing\VSCode\C++\MyGameEngine3D\external\GLFW\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\glm;C:\Users\petrs\AppData\Local\Programs\Python\Python310\include;C:\Users\petrs\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/asmjit.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/c10.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/fbgemm.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiomp5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/libiompstubs5md.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_cpu.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/torch_global_deps.dll D:/Programing/VSCode/C++/MyGameEngine3D/external/libtorch/lib/uv.dll D:/Programing/VSCode/C++/MyGameEngine3D/build/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\external\libtorch\lib\c10.lib;..\external\libtorch\lib\kineto.lib;glfw3.lib;vulkan-1.lib;..\external\libtorch\lib\torch.lib;..\external\libtorch\lib\torch_cpu.lib;..\external\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/VulkanSDK/Lib;D:/VulkanSDK/Lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs;C:/Users/petrs/AppData/Local/Programs/Python/Python310/libs/$(Configuration);D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib;D:/Programing/VSCode/C++/MyGameEngine3D/external/GLFW/lib/$(Configuration);C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib;C:/Users/petrs/AppData/Local/Programs/Python/Python310/Lib/site-packages/numpy/core/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Programing/VSCode/C++/MyGameEngine3D/build/RelWithDebInfo/MyGameEngine.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Programing/VSCode/C++/MyGameEngine3D/build/RelWithDebInfo/MyGameEngine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Programing\VSCode\C++\MyGameEngine3D\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Programing/VSCode/C++/MyGameEngine3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Programing/VSCode/C++/MyGameEngine3D -BD:/Programing/VSCode/C++/MyGameEngine3D/build --check-stamp-file D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\.env.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCXXCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeRCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeSystem.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2ConfigVersion.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets-debug.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\threads.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Programing/VSCode/C++/MyGameEngine3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Programing/VSCode/C++/MyGameEngine3D -BD:/Programing/VSCode/C++/MyGameEngine3D/build --check-stamp-file D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\.env.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCXXCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeRCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeSystem.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2ConfigVersion.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets-debug.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\threads.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Programing/VSCode/C++/MyGameEngine3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Programing/VSCode/C++/MyGameEngine3D -BD:/Programing/VSCode/C++/MyGameEngine3D/build --check-stamp-file D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\.env.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCXXCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeRCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeSystem.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2ConfigVersion.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets-debug.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\threads.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Programing/VSCode/C++/MyGameEngine3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Programing/VSCode/C++/MyGameEngine3D -BD:/Programing/VSCode/C++/MyGameEngine3D/build --check-stamp-file D:/Programing/VSCode/C++/MyGameEngine3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\FindThreads.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\.env.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeCXXCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeRCCompiler.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\3.21.21080301-MSVC_2\CMakeSystem.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2ConfigVersion.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets-debug.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\threads.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\Programing\VSCode\C++\MyGameEngine3D\external\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Programing\VSCode\C++\MyGameEngine3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\agent.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\first_app.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\keyboard_movement_controller.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\main.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\model.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_buffer.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_camera.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_descriptors.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_device.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_model.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_pipeline.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_renderer.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_swap_chain.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\my_window.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\systems\directional_light_system.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\systems\point_light_system.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\systems\simple_renderer_system.cpp" />
+    <ClCompile Include="D:\Programing\VSCode\C++\MyGameEngine3D\src\try.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Programing\VSCode\C++\MyGameEngine3D\build\ZERO_CHECK.vcxproj">
+      <Project>{B0852779-9D7F-36D7-B8C1-6F5837BE6E34}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
