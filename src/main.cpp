@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
-#include <snake_ai/app.hpp>
+#include <sorting_algorithms/app.hpp>
 
 int main(){
     App app{};

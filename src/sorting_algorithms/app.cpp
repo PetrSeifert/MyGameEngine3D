@@ -1,4 +1,4 @@
-#include <template_app.hpp>
+#include <sorting_algorithms/app.hpp>
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -21,11 +21,19 @@ MyModel::Builder boardSprite = {{
     {{0}, {2}, {3}, {0}, {1}, {2}}
 };
 
-MyModel::Builder blockSprite = {{
+MyModel::Builder greenSprite = {{
     {{-1, -1, 0.f}, {0.0f, 1.0f, 0.0f}},
     {{1, -1, 0.f}, {0.0f, 1.0f, 0.0f}},
     {{1, 1, 0.f}, {0.0f, 1.0f, 0.0f}},
     {{-1, 1, 0.f}, {0.0f, 1.0f, 0.0f}}},
+    {{0}, {2}, {3}, {0}, {1}, {2}}
+};
+
+MyModel::Builder redSprite = {{
+    {{-1, -1, 0.f}, {1.0f, 0.0f, 0.0f}},
+    {{1, -1, 0.f}, {1.0f, 0.0f, 0.0f}},
+    {{1, 1, 0.f}, {1.0f, 0.0f, 0.0f}},
+    {{-1, 1, 0.f}, {1.0f, 0.0f, 0.0f}}},
     {{0}, {2}, {3}, {0}, {1}, {2}}
 };
 
@@ -34,13 +42,7 @@ App::App(){
         .setMaxSets(MySwapChain::MAX_FRAMES_IN_FLIGHT)
         .addPoolSize(VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, MySwapChain::MAX_FRAMES_IN_FLIGHT)
         .build();
-    loadGameObjects();
-    setup();
-}
 
-App::~App(){}
-
-void App::setup(){ 
     uboBuffers = std::vector<std::unique_ptr<MyBuffer>>(MySwapChain::MAX_FRAMES_IN_FLIGHT);
     for (int i = 0; i < uboBuffers.size(); i++){
         uboBuffers[i] = std::make_unique<MyBuffer>(
@@ -60,10 +62,15 @@ void App::setup(){
             .writeBuffer(0, &bufferInfo)
             .build(globalDescriptorSets[i]);
     }
-
-    //camera.setViewTarget(glm::vec3(-1.f, -2.f, 11.3f), glm::vec3(0.f, 0.f, 1.5f));
     
+    setup();
     currentTime = std::chrono::high_resolution_clock::now();
+}
+
+App::~App(){}
+
+void App::setup(){ 
+    loadGameObjects();
 }
 
 void App::run() {
@@ -75,6 +82,32 @@ void App::run() {
         currentTime = newTime;
         sumFrameTime += frameTime;
         totalTime += frameTime;
+
+        if (!bubbleSort.sorted)
+            bubbleSort.sortStep();
+
+        for (int i = 0; i < bubbleSort.listSize; i++){
+            int id = i + 1;
+            auto it = std::find(bubbleSort.v.begin(),bubbleSort.v.end(), gameObjects.at(id).transform.scale.y);
+
+            if (std::distance(bubbleSort.v.begin(), it) == bubbleSort.currentIndex || std::distance(bubbleSort.v.begin(), it) == bubbleSort.currentIndex + 1){
+                std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, redSprite);
+                gameObjects.at(id).model = myModel;
+            }
+            if (std::distance(bubbleSort.v.begin(), it) == bubbleSort.currentIndex - 1){
+                std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
+                gameObjects.at(id).model = myModel;
+            }
+            if (bubbleSort.v.at(bubbleSort.listSize - 1) == gameObjects.at(id).transform.scale.y){
+                std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
+                gameObjects.at(id).model = myModel;
+            }
+
+            it = std::find(bubbleSort.v.begin(),bubbleSort.v.end(), gameObjects.at(id).transform.scale.y);
+            gameObjects.at(id).transform.translation = 
+            {-cameraSize + 0.5f + std::distance(bubbleSort.v.begin(), it), 
+             gameObjects.at(id).transform.translation.y, gameObjects.at(id).transform.translation.z};
+        }
 
 
         //set max frameTime for big lags
@@ -117,19 +150,20 @@ void App::run() {
 }
 
 void App::loadGameObjects(){
-    std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, blockSprite);
-
-    auto gameObj = MyGameObject::createGameObject();
-    gameObj.model = myModel;
-    // gameObj.transform.translation = {.5f + i, .5f, 0.f};
-    // gameObjects.emplace(gameObj.getId(), std::move(gameObj));
-    // snakeBlocks.insert(snakeBlocks.begin(), gameObj.getId());
-    // gameObj.transform.translation = {cameraSize + 0.5f, cameraSize + 0.5f, 0};
-    gameObj.transform.translation = {0.5f, 0.5f, 0};
-    gameObjects.emplace(gameObj.getId(), std::move(gameObj));
+    std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
+    std::cout << bubbleSort.listSize <<std::endl;
+    for (int i = 0; i < bubbleSort.listSize; i++){
+        std::cout << bubbleSort.v.at(i) << std::endl;
+        auto gameObj = MyGameObject::createGameObject();
+        gameObj.model = myModel;
+        gameObj.transform.scale = {1, bubbleSort.v.at(i), 1};
+        gameObj.transform.translation = {-cameraSize + 0.5f + i, cameraSize - gameObj.transform.scale.y / 2, 0};
+        gameObj.color = {1, 0, 0};
+        gameObjects.emplace(gameObj.getId(), std::move(gameObj));
+    }
 
     myModel = std::make_shared<MyModel>(myDevice, boardSprite);
-    gameObj = MyGameObject::createGameObject();
+    auto gameObj = MyGameObject::createGameObject();
     gameObj.model = myModel;
     gameObj.transform.translation = {0, 0, .2f};
     gameObj.transform.scale = {cameraSize*2, cameraSize*2, cameraSize*2};
