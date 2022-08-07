@@ -14,5 +14,6 @@ int main(){
         std::cerr << e.what() << '\n';
         return EXIT_FAILURE;
     }
+    exit(0);
     return EXIT_SUCCESS;
 }

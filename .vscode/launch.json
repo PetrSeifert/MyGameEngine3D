@@ -9,9 +9,11 @@
             "type": "cppvsdbg",
             "request": "launch",
             "program": "D:\\Programing\\VSCode\\C++\\MyGameEngine3D\\build/Release/MyGameEngine.exe",
+            "cwd": "D:\\Programing\\VSCode\\C++\\MyGameEngine3D\\build/Release",
+            // "program": "D:\\Programing\\VSCode\\C++\\MyGameEngine3D\\build/Debug/MyGameEngine.exe",
+            // "cwd": "D:\\Programing\\VSCode\\C++\\MyGameEngine3D\\build/Debug",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "D:\\Programing\\VSCode\\C++\\MyGameEngine3D\\build/Release",
             "environment": [],
             "console": "externalTerminal"
         }

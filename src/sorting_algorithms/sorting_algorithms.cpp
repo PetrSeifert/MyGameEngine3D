@@ -1,8 +1,8 @@
 #include <sorting_algorithms/sorting_algorithms.hpp>
 
-BubbleSort::BubbleSort(int listSize) : listSize{listSize} {RandomFillList();}
+BaseSort::BaseSort(int listSize) : listSize{listSize} {RandomFillList();}
 
-void BubbleSort::RandomFillList(){
+void BaseSort::RandomFillList(){
     static std::random_device rd;  
     static std::mt19937 gen(rd()); 
     std::uniform_int_distribution<> distrib1(1, listSize);
@@ -27,7 +27,7 @@ void BubbleSort::sortStep(){
         swapped = false;
         return;
     }
-    
+
     if (v.at(currentIndex) > v.at(currentIndex + 1)){
         int copy = v.at(currentIndex);
         v.at(currentIndex) = v.at(currentIndex + 1);
@@ -35,4 +35,54 @@ void BubbleSort::sortStep(){
         swapped = true;
     }
     currentIndex++;
+}
+
+void SelectionSort::sortStep(){
+    if (loopIndex == listSize - 1){
+        sorted = true;
+        return;
+    }
+
+    if (currentIndex == loopIndex) {
+        minIndex = loopIndex;
+        minValueIndex = loopIndex;
+        currentIndex++;
+    }
+
+    if (v.at(minValueIndex) > v.at(currentIndex)){
+        minValueIndex = currentIndex;
+    }
+
+    if (currentIndex == listSize - 1){
+        int copy = v.at(minIndex);
+        v.at(minIndex) = v.at(minValueIndex);
+        v.at(minValueIndex) = copy;
+        loopIndex++;
+        currentIndex = loopIndex;
+        return;
+    }
+    currentIndex++;
+}
+
+void InsertionSort::sortStep(){
+    if (currentIndex == listSize){
+        sorted = true;
+        return;
+    }
+
+    if (backtrackIndex == 0){
+        currentIndex++;
+        backtrackIndex = currentIndex;
+    }
+
+    if (v.at(backtrackIndex) > v.at(backtrackIndex - 1)){
+        currentIndex++;
+        backtrackIndex = currentIndex;
+    }
+    else{
+        int copy = v.at(backtrackIndex);
+        v.at(backtrackIndex) = v.at(backtrackIndex - 1);
+        v.at(backtrackIndex - 1) = copy;
+        backtrackIndex--;
+    } 
 }

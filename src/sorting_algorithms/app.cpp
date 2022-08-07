@@ -83,29 +83,29 @@ void App::run() {
         sumFrameTime += frameTime;
         totalTime += frameTime;
 
-        if (!bubbleSort.sorted)
-            bubbleSort.sortStep();
+        if (!insertionSort.sorted)
+            insertionSort.sortStep();
 
-        for (int i = 0; i < bubbleSort.listSize; i++){
+        for (int i = 0; i < insertionSort.listSize; i++){
             int id = i + 1;
-            auto it = std::find(bubbleSort.v.begin(),bubbleSort.v.end(), gameObjects.at(id).transform.scale.y);
+            // auto it = std::find(insertionSort.v.begin(),insertionSort.v.end(), gameObjects.at(id).transform.scale.y);
 
-            if (std::distance(bubbleSort.v.begin(), it) == bubbleSort.currentIndex || std::distance(bubbleSort.v.begin(), it) == bubbleSort.currentIndex + 1){
-                std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, redSprite);
-                gameObjects.at(id).model = myModel;
-            }
-            if (std::distance(bubbleSort.v.begin(), it) == bubbleSort.currentIndex - 1){
-                std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
-                gameObjects.at(id).model = myModel;
-            }
-            if (bubbleSort.v.at(bubbleSort.listSize - 1) == gameObjects.at(id).transform.scale.y){
-                std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
-                gameObjects.at(id).model = myModel;
-            }
+            // if (std::distance(insertionSort.v.begin(), it) == insertionSort.currentIndex || std::distance(insertionSort.v.begin(), it) == insertionSort.minValueIndex){
+            //     std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, redSprite);
+            //     gameObjects.at(id).model = myModel;
+            // }
+            // if (std::distance(insertionSort.v.begin(), it) == insertionSort.currentIndex - 1){
+            //     std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
+            //     gameObjects.at(id).model = myModel;
+            // }
+            // if (insertionSort.v.at(insertionSort.listSize - 1) == gameObjects.at(id).transform.scale.y){
+            //     std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
+            //     gameObjects.at(id).model = myModel;
+            // }
 
-            it = std::find(bubbleSort.v.begin(),bubbleSort.v.end(), gameObjects.at(id).transform.scale.y);
+            auto it = std::find(insertionSort.v.begin(),insertionSort.v.end(), gameObjects.at(id).transform.scale.y);
             gameObjects.at(id).transform.translation = 
-            {-cameraSize + 0.5f + std::distance(bubbleSort.v.begin(), it), 
+            {-cameraSize + 0.5f + std::distance(insertionSort.v.begin(), it), 
              gameObjects.at(id).transform.translation.y, gameObjects.at(id).transform.translation.z};
         }
 
@@ -151,12 +151,12 @@ void App::run() {
 
 void App::loadGameObjects(){
     std::shared_ptr<MyModel> myModel = std::make_shared<MyModel>(myDevice, greenSprite);
-    std::cout << bubbleSort.listSize <<std::endl;
-    for (int i = 0; i < bubbleSort.listSize; i++){
-        std::cout << bubbleSort.v.at(i) << std::endl;
+    std::cout << insertionSort.listSize <<std::endl;
+    for (int i = 0; i < insertionSort.listSize; i++){
+        std::cout << insertionSort.v.at(i) << std::endl;
         auto gameObj = MyGameObject::createGameObject();
         gameObj.model = myModel;
-        gameObj.transform.scale = {1, bubbleSort.v.at(i), 1};
+        gameObj.transform.scale = {1, insertionSort.v.at(i), 1};
         gameObj.transform.translation = {-cameraSize + 0.5f + i, cameraSize - gameObj.transform.scale.y / 2, 0};
         gameObj.color = {1, 0, 0};
         gameObjects.emplace(gameObj.getId(), std::move(gameObj));

@@ -56,7 +56,7 @@ class App{
         std::chrono::steady_clock::time_point currentTime;
         KeyboardMovementController cameraController;
         MyCamera camera{};
-        BubbleSort bubbleSort{};
+        InsertionSort insertionSort{};
 
 
         std::unique_ptr<MyDescriptorSetLayout> globalSetLayout = MyDescriptorSetLayout::Builder(myDevice)
