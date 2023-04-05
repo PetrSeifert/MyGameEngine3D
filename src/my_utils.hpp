@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e4b6ca93ead41ef6ef4ddd29f1532471a69031c482f1d06a5b95759b049273a
-size 277
+#pragma once
+
+// from: https://stackoverflow.com/a/57595105
+template <typename T, typename... Rest>
+void hashCombine(std::size_t& seed, const T& v, const Rest&... rest) {
+  seed ^= std::hash<T>{}(v) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+  (hashCombine(seed, rest), ...);
+};

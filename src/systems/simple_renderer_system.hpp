@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6fb12a848d032bfc4b6f8de619bfec6fe6c5151dcacd3d101650f45eab177a88
-size 835
+#pragma once
+
+#include <my_camera.hpp>
+#include <my_pipeline.hpp>
+#include <my_device.hpp>
+#include <my_game_object.hpp>
+#include <my_frame_info.hpp>
+
+//std
+#include <memory>
+
+class SimpleRendererSystem{
+    public:
+        SimpleRendererSystem(MyDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout);
+        ~SimpleRendererSystem();
+
+        SimpleRendererSystem(const SimpleRendererSystem &) = delete;
+        SimpleRendererSystem& operator=(const SimpleRendererSystem &) = delete;
+    
+        void renderGameObjects(FrameInfo& frameInfo);
+
+    private:
+        void createPipelineLayout(VkDescriptorSetLayout globalSetLayout);
+        void createPipeline(VkRenderPass renderPass);
+
+        MyDevice &myDevice;
+
+        std::unique_ptr<MyPipeline> myPipeline;
+        VkPipelineLayout pipelineLayout;  
+};

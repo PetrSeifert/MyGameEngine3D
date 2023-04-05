@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50b6975d3b86871419009b611068c68fc70b268fc512365c50b01ea40b03dae6
-size 1020
+#pragma once
+
+#include <vulkan/vulkan.h>
+#include <GLFW/include/glfw3.h>
+
+#include <string>
+
+class MyWindow {
+    public:
+        MyWindow(int w, int h, std::string title);
+        ~MyWindow();
+
+        MyWindow(const MyWindow&) = delete;
+        MyWindow& operator=(const MyWindow&) = delete;
+        
+        bool shouldClose() { return glfwWindowShouldClose(window); }
+        VkExtent2D getExtent() { return {static_cast<uint32_t>(width), static_cast<uint32_t>(height)}; }
+        bool wasWindowResized() { return framebufferResized; }
+        void resetWindowResizedFlag() { framebufferResized = false; }
+
+        void createWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
+        GLFWwindow* getGLFWWindow() { return window; }
+
+    private:
+        static void framebufferResizeCallback(GLFWwindow* window, int width, int height);
+        void initWindow();
+
+        int width;
+        int height;
+        bool framebufferResized = false;
+
+        std::string windowTitle;
+        GLFWwindow* window;
+};

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd6443a06b40fe572ceb421a4a3f66cc311fd6adc532ae2b967d0dff8339806d
-size 425
+#version 460 core
+
+layout (location = 0) in vec2 fragOffset;
+layout (location = 0) out vec4 outColor;
+
+layout (set = 0, binding = 0) uniform GlobalUbo{
+    mat4 projection;
+    mat4 view;
+    vec4 ambientLightColor;
+    vec3 lightPosition;
+    vec4 lightColor;
+} ubo;
+
+void main() {
+    float dis = sqrt(dot(fragOffset, fragOffset));
+    if (dis >= 1.0){
+        discard;
+    }
+    outColor = vec4(ubo.lightColor.xyz, 1.0);
+}
