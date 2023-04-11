@@ -9,22 +9,23 @@
 //std
 #include <memory>
 
-class SimpleRendererSystem{
-    public:
-        SimpleRendererSystem(MyDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout);
-        ~SimpleRendererSystem();
+class SimpleRendererSystem
+{
+public:
+	SimpleRendererSystem(MyDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout);
+	~SimpleRendererSystem();
 
-        SimpleRendererSystem(const SimpleRendererSystem &) = delete;
-        SimpleRendererSystem& operator=(const SimpleRendererSystem &) = delete;
-    
-        void renderGameObjects(FrameInfo& frameInfo);
+	SimpleRendererSystem(const SimpleRendererSystem&) = delete;
+	SimpleRendererSystem& operator=(const SimpleRendererSystem&) = delete;
 
-    private:
-        void createPipelineLayout(VkDescriptorSetLayout globalSetLayout);
-        void createPipeline(VkRenderPass renderPass);
+	void renderGameObjects(FrameInfo& frameInfo);
 
-        MyDevice &myDevice;
+private:
+	void createPipelineLayout(VkDescriptorSetLayout globalSetLayout);
+	void createPipeline(VkRenderPass renderPass);
 
-        std::unique_ptr<MyPipeline> myPipeline;
-        VkPipelineLayout pipelineLayout;  
+	MyDevice& myDevice;
+
+	std::unique_ptr<MyPipeline> myPipeline;
+	VkPipelineLayout pipelineLayout;
 };

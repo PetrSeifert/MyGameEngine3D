@@ -4,16 +4,19 @@
 #include <stdexcept>
 #include <sorting_algorithms/app.hpp>
 
-int main(){
-    App app{};
+int main()
+{
+	App app{};
 
-    try{
-        app.run();
-    }
-    catch(const std::exception& e){
-        std::cerr << e.what() << '\n';
-        return EXIT_FAILURE;
-    }
-    exit(0);
-    return EXIT_SUCCESS;
+	try
+	{
+		app.run();
+	}
+	catch (const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+		return EXIT_FAILURE;
+	}
+	exit(0);
+	return EXIT_SUCCESS;
 }

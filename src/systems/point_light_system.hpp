@@ -9,22 +9,23 @@
 //std
 #include <memory>
 
-class PointLightSystem{
-    public:
-        PointLightSystem(MyDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout);
-        ~PointLightSystem();
+class PointLightSystem
+{
+public:
+	PointLightSystem(MyDevice& device, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout);
+	~PointLightSystem();
 
-        PointLightSystem(const PointLightSystem &) = delete;
-        PointLightSystem& operator=(const PointLightSystem &) = delete;
-    
-        void render(FrameInfo& frameInfo);
+	PointLightSystem(const PointLightSystem&) = delete;
+	PointLightSystem& operator=(const PointLightSystem&) = delete;
 
-    private:
-        void createPipelineLayout(VkDescriptorSetLayout globalSetLayout);
-        void createPipeline(VkRenderPass renderPass);
+	void render(FrameInfo& frameInfo);
 
-        MyDevice &myDevice;
+private:
+	void createPipelineLayout(VkDescriptorSetLayout globalSetLayout);
+	void createPipeline(VkRenderPass renderPass);
 
-        std::unique_ptr<MyPipeline> myPipeline;
-        VkPipelineLayout pipelineLayout;  
+	MyDevice& myDevice;
+
+	std::unique_ptr<MyPipeline> myPipeline;
+	VkPipelineLayout pipelineLayout;
 };

@@ -9,6 +9,7 @@
 //std
 #include <memory>
 
-class DirectionalLightSystem{
+class DirectionalLightSystem 
+{
 
 };

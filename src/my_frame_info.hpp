@@ -5,11 +5,12 @@
 
 #include <vulkan/vulkan.h>
 
-struct FrameInfo{
-    int frameIndex;
-    float frameTime;
-    VkCommandBuffer commandBuffer;
-    MyCamera &camera;
-    VkDescriptorSet globalDescriptorSet;
-    MyGameObject::Map &gameObjects;
+struct FrameInfo 
+{
+	int frameIndex;
+	float frameTime;
+	VkCommandBuffer commandBuffer;
+	MyCamera& camera;
+	VkDescriptorSet globalDescriptorSet;
+	MyGameObject::Map& gameObjects;
 };
